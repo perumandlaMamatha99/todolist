@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  body {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .App {
+    text-align: center;
   }
-}
+  
+  .todo-form {
+    width: 100%;
+    margin-top:30px;
+  }
+  
+  .todo-input {
+    background: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 300px;
+  }
+  
+  .todo-btn {
+    background: #8758ff;
+    color: #fff;
+    border: none;
+    padding: 0.55rem;
+    cursor: pointer;
+    height:35px;
+    
+  }
+  
+  .Todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #8758ff;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  
+  .fa-trash {
+    margin-left: 0.75rem;
+  }
+  
+  .completed {
+    color: #c5aeff;
+    text-decoration: line-through;
+  }
+  .todo-container{
+    background-color: #8758ff;
+    margin-top: 20px;
+    height:45px;
+    align-items: center;
+    color:white;
+    padding:0px 20px ;
+    display: flex;
+    justify-content: space-between;
+  }
+  .complete{
+    background-color:rgb(100, 237, 162);
+    margin-top: 20px;
+    height:45px;
+    align-items: center;
+    color:white;
+    padding:0px 20px ;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: line-through;
+  }
+  .todos-btn{
+    border:none;
+    background-color:cadetblue;
+    width:180px;
+    height:25px;
+    cursor: pointer;
+    margin-left:5px;
+    font-size:20px;
+    border-radius: 5px;
+  
+  }
